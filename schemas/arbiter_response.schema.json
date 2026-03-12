@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/arbiter_response.schema.json",
+  "title": "ArbiterResponse",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "candidate_id",
+    "judgement",
+    "confidence",
+    "reason_summary",
+    "key_factors",
+    "recommended_action"
+  ],
+  "properties": {
+    "candidate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "judgement": {
+      "type": "string",
+      "enum": ["promoted", "watchlist", "rejected"]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "reason_summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "key_factors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommended_action": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

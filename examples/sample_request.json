@@ -1,0 +1,17 @@
+{
+  "candidate_id": "case_001",
+  "domain": "procurement",
+  "candidate_type": "opportunity",
+  "summary": "Regional infrastructure funding opportunity aligned to public-sector resilience services.",
+  "evidence": {
+    "source_count": 3,
+    "freshness_days": 4,
+    "fit_score": 0.82,
+    "estimated_value_band": "medium-high"
+  },
+  "context": {
+    "buyer_profile": "regional advisory firm",
+    "current_queue_pressure": "high",
+    "action_cost": "medium"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/arbiter_request.schema.json",
+  "title": "ArbiterRequest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "candidate_id",
+    "domain",
+    "candidate_type",
+    "summary",
+    "evidence",
+    "context"
+  ],
+  "properties": {
+    "candidate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The operating domain for the candidate, e.g. procurement, funding, agent_tool_call."
+    },
+    "candidate_type": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The type of candidate being judged, e.g. opportunity, alert, tool_call."
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "source_count",
+        "freshness_days",
+        "fit_score"
+      ],
+      "properties": {
+        "source_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "freshness_days": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "fit_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "estimated_value_band": {
+          "type": "string"
+        }
+      }
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "buyer_profile": {
+          "type": "string"
+        },
+        "current_queue_pressure": {
+          "type": "string",
+          "enum": ["low", "medium", "high"]
+        },
+        "action_cost": {
+          "type": "string",
+          "enum": ["low", "medium", "high"]
+        }
+      }
+    }
+  }
+}
