@@ -2,6 +2,8 @@
 
 Public-facing repository for Arbiter, a judgement layer for AI and operator workflows.
 
+Input: candidate payload. Output: structured judgement — promoted, watchlist, or rejected.
+
 Arbiter is a judgement layer that sits between noisy candidate generation and downstream action. It takes a candidate payload, evaluates the available evidence, and returns a structured judgement such as `promoted`, `watchlist`, or `rejected`.
 
 This repository is a minimal public demonstration of the judgement contract. It is not the full internal Arbiter engine or validation stack.
@@ -30,6 +32,8 @@ Run the demo from the repository root:
 ```bash
 python demo/run.py
 ```
+
+See `schemas/` and `examples/` first if you want the contract before running code.
 
 It reads [`examples/sample_request.json`](./examples/sample_request.json) and prints a structured judgement response.
 
