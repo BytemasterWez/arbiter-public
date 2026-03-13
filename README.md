@@ -41,6 +41,16 @@ Garbage Collector -> Jigsaw -> Arbiter -> Action
 
 This repo remains independently usable as a standalone contract demo.
 
+## Conceptual Role
+
+```mermaid
+flowchart LR
+    IN["Candidate + Evidence + Context"]
+    --> JUDGE["Judgment Engine"]
+    --> GATE["Policy + Confidence Check"]
+    --> OUT["Decision: promoted · watchlist · rejected"]
+```
+
 ## Public Interfaces
 
 - request schema: [`schemas/arbiter_request.schema.json`](./schemas/arbiter_request.schema.json)
