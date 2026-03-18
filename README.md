@@ -1,10 +1,7 @@
 # Arbiter Public
 
-Arbiter is the judgment membrane in a larger three-repository architecture.
-
-- Garbage Collector remembers.
-- Jigsaw assembles explicit evidence.
-- Arbiter judges whether action is permitted.
+Arbiter is a governance membrane at the generation-to-action boundary in
+LLM-powered systems.
 
 This repository is a public, minimal demonstration of the Arbiter contract. It is intentionally narrow and does not expose the full current research/runtime system.
 
@@ -71,24 +68,17 @@ In this public repo, the exposed outputs are:
 
 Arbiter is not:
 
-- the memory substrate
-- the evidence-gathering kernel chain
-- the downstream action executor
 - the full policy engine
 - the benchmark harness
 - the reverse-pass verification layer
 
-## Role In The Larger Architecture
+## Role At The Boundary
 
-Arbiter sits between candidate preparation and action.
+Arbiter sits between proposed action and accepted execution.
 
 ```text
-Garbage Collector -> Jigsaw -> Arbiter -> Action
+Candidate -> Arbiter -> Action -> Verification
 ```
-
-- Garbage Collector supplies recall and context
-- Jigsaw converts candidates into explicit evidence bundles
-- Arbiter decides whether action is justified
 
 This repo remains independently usable as a standalone contract demo.
 
@@ -97,10 +87,20 @@ This repo remains independently usable as a standalone contract demo.
 ```mermaid
 flowchart LR
     IN["Candidate + Evidence + Context"]
-    --> JUDGE["Judgment Engine"]
-    --> GATE["Policy + Confidence Check"]
-    --> OUT["Decision: promoted · watchlist · rejected"]
+    --> FWD["Forward-Pass Judgment"]
+    --> DECIDE["Proposed Decision"]
+    --> ACT["Action Executes"]
+    --> REV["Reverse-Pass Verification"]
+    --> OUT["Accepted / Rejected Result"]
 ```
+
+In the broader Arbiter system, the membrane is bidirectional:
+
+- the forward pass judges what is proposed
+- the reverse pass verifies what actually executed
+
+This public repo demonstrates the contract surface, not the full
+bidirectional runtime.
 
 ## Public Interfaces
 
@@ -121,7 +121,8 @@ It reads [`examples/sample_request.json`](./examples/sample_request.json) and pr
 
 ## Integration Use
 
-Arbiter is designed to be called by an external capability layer such as Jigsaw.
+Arbiter is designed to be called by an external orchestration or capability
+layer.
 
 The important rule is:
 
@@ -134,8 +135,7 @@ The important rule is:
 - a public request/response judgment contract exists
 - the judgment surface is legible to outside readers
 - the repo can stand alone as a deterministic contract demo
-- Jigsaw can map into this public contract through a thin adapter
-- the public wedge is sufficient to explain Arbiter's role in the larger architecture
+- the public wedge is sufficient to explain Arbiter's role at the action boundary
 
 ## Not Yet Proven
 
@@ -150,8 +150,7 @@ Arbiter is the layer that turns evidence into permission or refusal.
 
 It should stay separate from:
 
-- memory retrieval concerns
-- kernelized evidence generation
+- evidence preparation concerns
 - downstream action execution
 
 That separation is the point of the architecture.
