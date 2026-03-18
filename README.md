@@ -157,5 +157,6 @@ That separation is the point of the architecture.
 
 ## Contact
 
-For research discussion or commercial conversations about Arbiter, contact the
-repository author via the linked public profiles and posts.
+For research discussion or commercial conversations about Arbiter:
+
+- `stratascout.research@gmail.com`
