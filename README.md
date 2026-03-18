@@ -6,7 +6,44 @@ Arbiter is the judgment membrane in a larger three-repository architecture.
 - Jigsaw assembles explicit evidence.
 - Arbiter judges whether action is permitted.
 
-This repository is a public, minimal demonstration of the Arbiter contract. It is intentionally narrow and does not expose the full internal system.
+This repository is a public, minimal demonstration of the Arbiter contract. It is intentionally narrow and does not expose the full current research/runtime system.
+
+## Public Status
+
+This repository is the public contract demo for Arbiter.
+
+It is designed to show:
+
+- the request/response judgment shape
+- the core promoted/watchlist/rejected decision surface
+- the integration boundary between evidence preparation and action gating
+
+It is not intended to represent the full current implementation.
+
+The broader Arbiter system now also includes:
+
+- bidirectional governance:
+  - forward-pass judgment
+  - reverse-pass verification
+- benchmark suites for:
+  - attack and benign calibration
+  - capability laundering
+  - argument laundering
+  - forward-and-return pass evaluation
+  - malformed payload handling
+  - payload stress
+  - poisoned external output
+  - short workflow sequences
+- cross-provider evaluation across local and hosted model families
+
+This public repo should be read as a narrow, stable interface demo rather than a complete snapshot of the project.
+
+## Public Research
+
+The current public research record for Arbiter is in the two Alignment Forum posts:
+
+- [Generator-contract failure at the generation-to-action boundary](https://www.lesswrong.com/posts/8e4s9M4Rz8xqJxqvK/generator-contract-failure-at-the-generation-to-action)
+- [Argument sanitisation is a capability-tier failure — and the forward pass cannot catch it](https://www.lesswrong.com/posts/jW5A4LEscRfhvkpTs/argument-sanitisation-is-a-capability-tier-failure-and-the)
 
 ## What Arbiter Is
 
@@ -25,7 +62,9 @@ Arbiter is not:
 - the memory substrate
 - the evidence-gathering kernel chain
 - the downstream action executor
-- the full internal policy engine
+- the full policy engine
+- the benchmark harness
+- the reverse-pass verification layer
 
 ## Role In The Larger Architecture
 
@@ -84,10 +123,11 @@ The important rule is:
 - the judgment surface is legible to outside readers
 - the repo can stand alone as a deterministic contract demo
 - Jigsaw can map into this public contract through a thin adapter
+- the public wedge is sufficient to explain Arbiter's role in the larger architecture
 
 ## Not Yet Proven
 
-- the full private Arbiter policy stack
+- the full Arbiter runtime and benchmark surface in public
 - first-class public `escalate` support
 - production deployment, operations, or policy completeness
 - broad domain coverage beyond the current narrow public wedge
