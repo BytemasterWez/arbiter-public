@@ -45,6 +45,18 @@ The current public research record for Arbiter is in the two Alignment Forum pos
 - [Generator-contract failure at the generation-to-action boundary](https://www.lesswrong.com/posts/8e4s9M4Rz8xqJxqvK/generator-contract-failure-at-the-generation-to-action)
 - [Argument sanitisation is a capability-tier failure — and the forward pass cannot catch it](https://www.lesswrong.com/posts/jW5A4LEscRfhvkpTs/argument-sanitisation-is-a-capability-tier-failure-and-the)
 
+## Current Public Scope
+
+| Area | Public repo status |
+|---|---|
+| Request/response contract | Included |
+| Deterministic judgment demo | Included |
+| Integration surface example | Included |
+| Full benchmark harness | Not included |
+| Reverse-pass verification runtime | Not included |
+| Cross-provider adapters and evaluation stack | Not included |
+| Full current research/runtime implementation | Not included |
+
 ## What Arbiter Is
 
 Arbiter is a decision layer that accepts a structured evidence bundle and returns a structured judgment.
@@ -143,3 +155,8 @@ It should stay separate from:
 - downstream action execution
 
 That separation is the point of the architecture.
+
+## Contact
+
+For research discussion or commercial conversations about Arbiter, contact the
+repository author via the linked public profiles and posts.
