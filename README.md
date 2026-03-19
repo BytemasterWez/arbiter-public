@@ -45,10 +45,11 @@ This public repo should be read as a narrow, stable interface demo rather than a
 
 ## Public Research
 
-The current public research record for Arbiter is in the two Alignment Forum posts:
+The current public research record for Arbiter is:
 
-- [Generator-contract failure at the generation-to-action boundary](https://www.lesswrong.com/posts/8e4s9M4Rz8xqJxqvK/generator-contract-failure-at-the-generation-to-action)
-- [Argument sanitisation is a capability-tier failure — and the forward pass cannot catch it](https://www.lesswrong.com/posts/jW5A4LEscRfhvkpTs/argument-sanitisation-is-a-capability-tier-failure-and-the)
+- the X thread and account: [x.com/Stratascout](https://x.com/Stratascout)
+- [Research findings](./FINDINGS.md)
+- [Public provenance manifest](./PUBLIC_PROVENANCE_MANIFEST.md)
 
 ## Current Public Scope
 

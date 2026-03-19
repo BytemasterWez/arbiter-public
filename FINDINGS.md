@@ -11,10 +11,11 @@ Contact: `stratascout.research@gmail.com`
 
 ## Public record
 
-The current public research record for Arbiter is:
+The current public record for Arbiter is:
 
-- [Generator-contract failure at the generation-to-action boundary](https://www.lesswrong.com/posts/8e4s9M4Rz8xqJxqvK/generator-contract-failure-at-the-generation-to-action)
-- [Argument sanitisation is a capability-tier failure - and the forward pass cannot catch it](https://www.lesswrong.com/posts/jW5A4LEscRfhvkpTs/argument-sanitisation-is-a-capability-tier-failure-and-the)
+- the X thread and account: [x.com/Stratascout](https://x.com/Stratascout)
+- this repository's [research findings](./FINDINGS.md)
+- this repository's [public provenance manifest](./PUBLIC_PROVENANCE_MANIFEST.md)
 
 ## Finding 1 - Generator-contract failure is measurable
 
