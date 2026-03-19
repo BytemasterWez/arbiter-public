@@ -5,6 +5,14 @@ LLM-powered systems.
 
 This repository is a public, minimal demonstration of the Arbiter contract. It is intentionally narrow and does not expose the full current research/runtime system.
 
+## Research And Evidence
+
+If you are arriving here from a post or conversation and want the strongest
+public record of what Arbiter has actually found so far, start here:
+
+- [Research findings](./FINDINGS.md)
+- [Public provenance manifest](./PUBLIC_PROVENANCE_MANIFEST.md)
+
 ## Public Status
 
 This repository is the public contract demo for Arbiter.
