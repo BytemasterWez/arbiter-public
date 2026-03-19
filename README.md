@@ -11,6 +11,7 @@ If you are arriving here from a post or conversation and want the strongest
 public record of what Arbiter has actually found so far, start here:
 
 - [Research findings](./FINDINGS.md)
+- [Live bidirectional proof](./LIVE_BIDIRECTIONAL_PROOF.md)
 - [Public provenance manifest](./PUBLIC_PROVENANCE_MANIFEST.md)
 
 ## Public Status
@@ -49,6 +50,7 @@ The current public research record for Arbiter is:
 
 - the X thread and account: [x.com/Stratascout](https://x.com/Stratascout)
 - [Research findings](./FINDINGS.md)
+- [Live bidirectional proof](./LIVE_BIDIRECTIONAL_PROOF.md)
 - [Public provenance manifest](./PUBLIC_PROVENANCE_MANIFEST.md)
 
 ## Current Public Scope
@@ -145,6 +147,8 @@ The important rule is:
 - the judgment surface is legible to outside readers
 - the repo can stand alone as a deterministic contract demo
 - the public wedge is sufficient to explain Arbiter's role at the action boundary
+- the first live bidirectional provider artifacts are now publicly recorded by
+  hash
 
 ## Not Yet Proven
 

@@ -15,6 +15,7 @@ The current public record for Arbiter is:
 
 - the X thread and account: [x.com/Stratascout](https://x.com/Stratascout)
 - this repository's [research findings](./FINDINGS.md)
+- this repository's [live bidirectional proof note](./LIVE_BIDIRECTIONAL_PROOF.md)
 - this repository's [public provenance manifest](./PUBLIC_PROVENANCE_MANIFEST.md)
 
 ## Finding 1 - Generator-contract failure is measurable
@@ -107,3 +108,33 @@ The frontier lane did not materially outperform the practical lane on this
 benchmark, and in some cases performed worse. On this evidence, the governance
 problem at this boundary is two-sided: not only stopping dangerous actions, but
 also not incorrectly blocking legitimate ones.
+
+## Finding 7 - The bidirectional path now works end to end across three real providers
+
+Date: March 2026
+
+Arbiter's combined forward-plus-return path has now been exercised with live
+provider-generated drafts on OpenAI, Anthropic, and Google. In these proof
+artifacts, the return path still uses benchmark execution logs, so this is not
+a claim about live production execution. It is a claim that the bidirectional
+governance workflow now runs end to end across the three main provider lanes.
+
+Top-line results on the current live bidirectional artifacts:
+
+- `gpt-5.4`: forward `12/13`, return `13/13`
+- `claude-opus-4-6`: forward `12/13`, return `13/13`
+- `gemini-2.5-flash`: forward `11/13`, return `13/13`
+
+The new mutation-evidence case is the clearest example. On all three providers
+the forward pass raised mismatch/watchlist signals and the return pass then
+confirmed the problem through explicit execution-truth signals, including
+`undeclared_write_on_declared_read`.
+
+Artifact SHA-256:
+
+- `gpt54_forward_return_live_v1.json`:
+  `e4d5e3367c2a08ca17c4068932f44e53b8ac59e4024651a3f11da9304e94c872`
+- `claude_opus46_forward_return_live_v1.json`:
+  `cf3cc4b78ab91a98d565b4b415a4aac2f7d59f7388f4bd5c16b3b1b81795d5fe`
+- `gemini25flash_forward_return_live_v1.json`:
+  `ed836d177536cad46a7317ea1f1fd9bd34f78ecd0bee9f4500102648afa48119`
