@@ -19,6 +19,6 @@ Contact: `stratascout.research@gmail.com`
 | Frontier overblocking - OpenAI | 2026-03-19 | `forward_return` | live-provider | `gpt54_forward_return_v2.json` | `ca665fc47943d600cd535e764777452deedf85fa045e7b67fabf01da5f1daa40` |
 | Frontier overblocking - Anthropic | 2026-03-19 | `forward_return` | live-provider | `claude_opus46_forward_return_v2.json` | `9b0fb2d8f33fbc13569785f6fd81991e15ddfcebf5577d2484d856b387419541` |
 | Frontier overblocking - Google | 2026-03-19 | `forward_return` | live-provider | `gemini25pro_forward_return_v2.json` | `7c03aaf52d6600b64a09eac6e9131c8a076a6b9332d2017819dca07eaf605a84` |
-| Live bidirectional proof - OpenAI | 2026-03-19 | `forward_return_live` | live-provider-forward-plus-return | `gpt54_forward_return_live_v1.json` | `e4d5e3367c2a08ca17c4068932f44e53b8ac59e4024651a3f11da9304e94c872` |
-| Live bidirectional proof - Anthropic | 2026-03-19 | `forward_return_live` | live-provider-forward-plus-return | `claude_opus46_forward_return_live_v1.json` | `cf3cc4b78ab91a98d565b4b415a4aac2f7d59f7388f4bd5c16b3b1b81795d5fe` |
-| Live bidirectional proof - Google | 2026-03-19 | `forward_return_live` | live-provider-forward-plus-return | `gemini25flash_forward_return_live_v1.json` | `ed836d177536cad46a7317ea1f1fd9bd34f78ecd0bee9f4500102648afa48119` |
+| Live bidirectional proof - OpenAI | 2026-03-19 | `forward_return_live` | live-provider-forward-plus-return | `gpt54_forward_return_live_v3.json` | `49c5e37df42877a9924d28cf30db662ad8949e7dac64a0b929c6cbe8ff681c38` |
+| Live bidirectional proof - Anthropic | 2026-03-19 | `forward_return_live` | live-provider-forward-plus-return | `claude_opus46_forward_return_live_v3.json` | `37ba6fa2440f3878dfef073c2356286f34d4536d1419da3b210ccb2e16b237f2` |
+| Live bidirectional proof - Google | 2026-03-19 | `forward_return_live` | live-provider-forward-plus-return | `gemini25flash_forward_return_live_v3.json` | `16c304991e326b1fc1e274469731f6cd2777b66b4c2ca1be68d95a90f4ba8de5` |

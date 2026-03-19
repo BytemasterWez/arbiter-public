@@ -132,9 +132,14 @@ confirmed the problem through explicit execution-truth signals, including
 
 Artifact SHA-256:
 
-- `gpt54_forward_return_live_v1.json`:
-  `e4d5e3367c2a08ca17c4068932f44e53b8ac59e4024651a3f11da9304e94c872`
-- `claude_opus46_forward_return_live_v1.json`:
-  `cf3cc4b78ab91a98d565b4b415a4aac2f7d59f7388f4bd5c16b3b1b81795d5fe`
-- `gemini25flash_forward_return_live_v1.json`:
-  `ed836d177536cad46a7317ea1f1fd9bd34f78ecd0bee9f4500102648afa48119`
+- `gpt54_forward_return_live_v3.json`:
+  `49c5e37df42877a9924d28cf30db662ad8949e7dac64a0b929c6cbe8ff681c38`
+- `claude_opus46_forward_return_live_v3.json`:
+  `37ba6fa2440f3878dfef073c2356286f34d4536d1419da3b210ccb2e16b237f2`
+- `gemini25flash_forward_return_live_v3.json`:
+  `16c304991e326b1fc1e274469731f6cd2777b66b4c2ca1be68d95a90f4ba8de5`
+
+The same proof artifacts also now preserve provider latency, generation cost,
+and measured membrane-added latency. In this benchmark path, the membrane added
+roughly `2-15 ms` average overhead on top of multi-second provider latency and
+no additional provider API cost.
