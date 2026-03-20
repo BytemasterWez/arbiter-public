@@ -147,7 +147,7 @@ The important rule is:
 - the judgment surface is legible to outside readers
 - the repo can stand alone as a deterministic contract demo
 - the public wedge is sufficient to explain Arbiter's role at the action boundary
-- the first live bidirectional provider artifacts are now publicly recorded by
+- the current live bidirectional provider artifacts are publicly recorded by
   hash
 
 ## Not Yet Proven
