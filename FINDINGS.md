@@ -77,7 +77,7 @@ Date: March 2026
 From the comparative control-mode benchmark on the forward/return suite:
 
 - without Arbiter, `75%` of cases in this deterministic reference suite would
-  remain unresolved by the control layer
+  pass through undetected
 - with forward pass only, `66.7%` of failures were caught
 - with bidirectional Arbiter, `100%` of failures were caught on this suite
 
