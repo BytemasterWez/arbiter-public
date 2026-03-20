@@ -5,6 +5,9 @@ LLM-powered systems.
 
 This repository is a public, minimal demonstration of the Arbiter contract. It is intentionally narrow and does not expose the full current research/runtime system.
 
+If you want the quickest explanation of what is public here versus what
+remains private, read [PUBLIC_SCOPE_AND_REPO_MAP.md](./PUBLIC_SCOPE_AND_REPO_MAP.md).
+
 ## Research And Evidence
 
 If you are arriving here from a post or conversation and want the strongest
@@ -42,7 +45,12 @@ The broader Arbiter system now also includes:
   - short workflow sequences
 - cross-provider evaluation across local and hosted model families
 
-This public repo should be read as a narrow, stable interface demo rather than a complete snapshot of the project.
+This public repo should be read as:
+
+- a public evidence package
+- a narrow stable interface demo
+
+not as a complete snapshot of the private project.
 
 ## Public Research
 
@@ -119,6 +127,7 @@ bidirectional runtime.
 - response schema: [`schemas/arbiter_response.schema.json`](./schemas/arbiter_response.schema.json)
 - demo adjudicator: [`demo/run.py`](./demo/run.py)
 - integration guide: [`INTEGRATION_SURFACES.md`](./INTEGRATION_SURFACES.md)
+- repo scope guide: [`PUBLIC_SCOPE_AND_REPO_MAP.md`](./PUBLIC_SCOPE_AND_REPO_MAP.md)
 
 ## Standalone Use
 

@@ -4,7 +4,13 @@
 
 This document describes Arbiter's public integration boundary.
 
-Arbiter accepts a structured evidence bundle and returns a structured judgment. It does not gather evidence itself.
+Arbiter accepts a structured evidence bundle and returns a structured judgment.
+It does not gather evidence itself.
+
+Important:
+
+this document describes the minimal public demo contract in this repository.
+It should not be read as the full current private Arbiter protocol.
 
 ## Accepted Input Shape
 
@@ -58,6 +64,12 @@ Current public decision labels:
 - `rejected`
 
 ## Current Limitation
+
+This public integration surface is intentionally simplified relative to the
+current private system.
+
+In particular, it does not expose the richer private forward/return protocol
+used in the full runtime and benchmark stack.
 
 The public contract does **not** currently expose a first-class `escalate` decision.
 
