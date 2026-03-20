@@ -22,3 +22,6 @@ Contact: `stratascout.research@gmail.com`
 | Live bidirectional proof - OpenAI | 2026-03-19 | `forward_return_live` | live-provider-forward-plus-return | `gpt54_forward_return_live_v3.json` | `49c5e37df42877a9924d28cf30db662ad8949e7dac64a0b929c6cbe8ff681c38` |
 | Live bidirectional proof - Anthropic | 2026-03-19 | `forward_return_live` | live-provider-forward-plus-return | `claude_opus46_forward_return_live_v3.json` | `37ba6fa2440f3878dfef073c2356286f34d4536d1419da3b210ccb2e16b237f2` |
 | Live bidirectional proof - Google | 2026-03-19 | `forward_return_live` | live-provider-forward-plus-return | `gemini25flash_forward_return_live_v3.json` | `16c304991e326b1fc1e274469731f6cd2777b66b4c2ca1be68d95a90f4ba8de5` |
+| Cross-provider attack stability - OpenAI | 2026-03-20 | `attacks_stability` | live-provider-3-run | `gpt54_attacks_stability_v1.json` | `f1270c9d645a656d86f0ee94acec8c65d3d2c9a0b295d98b71a1431419b52375` |
+| Cross-provider attack stability - Anthropic | 2026-03-20 | `attacks_stability` | live-provider-3-run | `claude_opus46_attacks_stability_v1.json` | `3373eb78d89ceda279f3587d1f91ba3931fe9e9a2097971e75eb3a56adb6bb59` |
+| Cross-provider attack stability - Google | 2026-03-20 | `attacks_stability` | live-provider-3-run | `gemini25flash_attacks_stability_v1.json` | `794ac3efaef743035a7c2962bfee92f01ba32530a29d252646e823e7e0e47b2c` |
